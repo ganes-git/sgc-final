@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antigravity Protocol (SGC)</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Fallback if external CSS fails */
+    body {
+      background-color: #000;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="glass-container header">
+      <h1><span class="neon-text">Antigravity</span> Protocol</h1>
+      <div class="subtitle">SEMANTIC GARBAGE COLLECTION // VELAMMAL SYMPOSIUM</div>
+    </header>
+
+    <main>
+      <!-- Input & Distill -->
+      <div class="glass-container input-section">
+        <textarea id="dataInput" placeholder="Enter raw data for semantic ingestion..."></textarea>
+        <div class="controls">
+          <button id="distillBtn" class="neon-button">Distill Data</button>
+          <div class="entropy-meter">Shannon Sensitivity: <span id="entropyValue">0.0000</span></div>
+        </div>
+      </div>
+
+      <!-- Blue Testing Box (Initially Hidden) -->
+      <div id="blueTestingBox" class="glass-container blue-testing-box">
+        <h2>System Verification</h2>
+        <div class="status-grid">
+          <div class="status-item">Vectorization: <span class="neon-text">ACTIVE</span></div>
+          <div class="status-item">Ledger Sync: <span class="neon-text">CONFIRMED</span></div>
+          <div class="status-item">Dissolution Status: <span class="neon-text">COMPLETE</span></div>
+        </div>
+      </div>
+
+      <!-- Analysis Dashboard -->
+      <div class="dashboard-grid">
+        <!-- Dissolved Knowledge Ledger -->
+        <div class="glass-container ledger-section">
+          <h2>Dissolved Knowledge Ledger</h2>
+          <div class="search-bar">
+            <input type="text" id="ledgerSearch" placeholder="Fuzzy search artifacts by metadata tags...">
+            <button id="searchBtn" class="neon-button-small">Search</button>
+          </div>
+          <div id="ledgerResults" class="ledger-results">
+            <!-- Results populated by JS -->
+            <div class="ledger-item phantom">Ledger initialized. Waiting for query...</div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      ANTIGRAVITY SYSTEMS // SECURE VECTOR LEDGER INTEGRATED
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

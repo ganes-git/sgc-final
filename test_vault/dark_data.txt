@@ -1,0 +1,5 @@
+repeat repeat repeat repeat repeat repeat repeat repeat repeat repeat
+repeat repeat repeat repeat repeat repeat repeat repeat repeat repeat
+repeat repeat repeat repeat repeat repeat repeat repeat repeat repeat
+This is low entropy data. It contains very little unique information.
+This is low entropy data. It contains very little unique information.

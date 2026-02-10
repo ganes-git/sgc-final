@@ -1,0 +1,10 @@
+{
+  "title": "Live Demo: Dark Data Dissolution",
+  "original_file": "Dark_Data_Test_Large.txt",
+  "original_size_mb": "11.92",
+  "final_size_kb": 4,
+  "reduction_ratio": "3,052:1",
+  "entropy_score": "1.2840",
+  "vector_ledger_tx": "0x75d6ac43de8ba",
+  "timestamp": "2026-01-26T14:12:37.410Z"
+}
