@@ -134,5 +134,5 @@ This project is licensed under the **ISC License**.
 ---
 
 <p align="center">
-  Made with ❤️ by <a href="https://github.com/ganes-git">ganes-git</a>
+  Made  by <a href="https://github.com/ganes-git">ganes-git</a>
 </p>
