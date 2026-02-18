@@ -3,10 +3,7 @@ import FileUpload from './components/FileUpload';
 import AnalysisDashboard from './components/AnalysisDashboard';
 import { analyzeData, distillData } from './api/client';
 
-import { ThemeProvider } from './components/ThemeContext';
-import ThemeToggle from './components/ThemeToggle';
-
-function AppContent() {
+function App() {
     const [analysis, setAnalysis] = useState(null);
     const [distillResult, setDistillResult] = useState(null);
     const [loading, setLoading] = useState(false);
@@ -56,10 +53,9 @@ function AppContent() {
             maxWidth: '800px',
             margin: '0 auto',
             padding: '2rem',
-            fontFamily: 'var(--font-sans)',
-            transition: 'color 0.3s ease'
+            fontFamily: 'var(--font-sans)'
         }}>
-            <header style={{ marginBottom: '3rem', borderBottom: '1px solid var(--border-primary)', paddingBottom: '1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <header style={{ marginBottom: '3rem', borderBottom: '1px solid var(--color-border)', paddingBottom: '1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <div>
                     <h1 style={{ margin: 0, fontSize: '1.5rem', letterSpacing: '2px', textTransform: 'uppercase' }}>
                         <span style={{ color: 'var(--color-accent-cyan)' }}>Dissolution</span> Engine
@@ -68,11 +64,8 @@ function AppContent() {
                         SEMANTIC GARBAGE COLLECTION SYSTEM
                     </div>
                 </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                    <div style={{ fontSize: '0.7rem', color: 'var(--border-secondary)', border: '1px solid var(--border-primary)', padding: '0.2rem 0.5rem', borderRadius: '4px' }}>
-                        V 1.0.0 // BETA
-                    </div>
-                    <ThemeToggle />
+                <div style={{ fontSize: '0.7rem', color: '#444', border: '1px solid #333', padding: '0.2rem 0.5rem', borderRadius: '4px' }}>
+                    V 1.0.0 // BETA
                 </div>
             </header>
 
@@ -110,14 +103,6 @@ function AppContent() {
                 ANTIGRAVITY SYSTEMS // SECURE VECTOR LEDGER INTEGRATED
             </footer>
         </div>
-    );
-}
-
-function App() {
-    return (
-        <ThemeProvider>
-            <AppContent />
-        </ThemeProvider>
     );
 }
 

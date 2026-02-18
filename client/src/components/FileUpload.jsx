@@ -33,17 +33,17 @@ const FileUpload = ({ onFileSelect }) => {
 
     return (
         <div style={{
-            border: '2px dashed var(--border-primary)',
+            border: '2px dashed var(--color-border)',
             borderRadius: '8px',
             padding: '2rem',
             textAlign: 'center',
-            backgroundColor: 'var(--bg-secondary)',
+            backgroundColor: 'var(--color-bg-panel)',
             cursor: 'pointer',
             transition: 'border-color 0.3s'
         }}
             onClick={() => fileInputRef.current.click()}
             onMouseOver={(e) => e.currentTarget.style.borderColor = 'var(--color-accent-cyan)'}
-            onMouseOut={(e) => e.currentTarget.style.borderColor = 'var(--border-primary)'}
+            onMouseOut={(e) => e.currentTarget.style.borderColor = 'var(--color-border)'}
         >
             <input
                 type="file"
@@ -56,7 +56,7 @@ const FileUpload = ({ onFileSelect }) => {
             <div style={{ color: 'var(--color-accent-cyan)', fontSize: '1.2rem', marginBottom: '0.5rem' }}>
                 drag & drop or click to upload
             </div>
-            <div style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
+            <div style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
                 Supports PDF, Text, Images, CSV (Max 1GB)
             </div>
 

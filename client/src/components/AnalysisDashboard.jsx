@@ -53,25 +53,25 @@ const AnalysisDashboard = ({ analysis, onDistill, isDistilling, distillResult })
                     <h2 style={{ margin: '0 0 0.5rem 0', color: 'var(--color-accent-cyan)', fontSize: '1.2rem', textTransform: 'uppercase', letterSpacing: '1px' }}>
                         {caseStudy.title}
                     </h2>
-                    <div style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+                    <div style={{ fontSize: '0.9rem', color: '#ccc' }}>
                         File: {caseStudy.original_file} <br />
                         Entropy: <span style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-success)' }}>{caseStudy.entropy_score}</span>
                     </div>
                 </div>
 
                 <div style={{ textAlign: 'right' }}>
-                    <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>REDUCTION RATIO</div>
-                    <div style={{ fontSize: '2.5rem', fontWeight: 'bold', color: 'var(--text-primary)', fontFamily: 'var(--font-mono)' }}>
+                    <div style={{ fontSize: '0.8rem', color: 'var(--color-text-secondary)' }}>REDUCTION RATIO</div>
+                    <div style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#fff', fontFamily: 'var(--font-mono)' }}>
                         {caseStudy.reduction_ratio}
                     </div>
                 </div>
 
                 <div style={{ textAlign: 'right', marginLeft: '2rem' }}>
-                    <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>VECTOR LEDGER</div>
+                    <div style={{ fontSize: '0.8rem', color: 'var(--color-text-secondary)' }}>VECTOR LEDGER</div>
                     <div style={{ fontSize: '0.7rem', fontFamily: 'var(--font-mono)', color: 'var(--color-accent-cyan)' }}>
                         {caseStudy.vector_ledger_tx.substring(0, 10)}...{caseStudy.vector_ledger_tx.substring(caseStudy.vector_ledger_tx.length - 4)}
                     </div>
-                    <div style={{ fontSize: '0.7rem', color: 'var(--text-secondary)' }}>
+                    <div style={{ fontSize: '0.7rem', color: '#666' }}>
                         {new Date(caseStudy.timestamp).toLocaleDateString()}
                     </div>
                 </div>
@@ -80,14 +80,14 @@ const AnalysisDashboard = ({ analysis, onDistill, isDistilling, distillResult })
             {/* Column 1: Analysis & Dissolution */}
             <div style={{
                 padding: '1.5rem',
-                backgroundColor: 'var(--bg-secondary)',
+                backgroundColor: 'var(--color-bg-panel)',
                 borderRadius: '8px',
-                border: `1px solid ${is_dark_data ? 'var(--color-error)' : 'var(--border-primary)'}`
+                border: `1px solid ${is_dark_data ? 'var(--color-error)' : 'var(--color-border)'}`
             }}>
                 <h2 style={{ margin: '0 0 1rem 0' }}>Analysis Results</h2>
 
                 <div style={{ marginBottom: '1.5rem' }}>
-                    <div style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Shannon Entropy Signature</div>
+                    <div style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>Shannon Entropy Signature</div>
                     <div style={{ fontSize: '2.5rem', fontFamily: 'var(--font-mono)', color: gaugeColor }}>
                         {entropy_score.toFixed(4)}
                     </div>
@@ -95,7 +95,7 @@ const AnalysisDashboard = ({ analysis, onDistill, isDistilling, distillResult })
                     <div style={{
                         height: '10px',
                         width: '100%',
-                        background: 'var(--border-primary)',
+                        background: '#333',
                         borderRadius: '5px',
                         overflow: 'hidden',
                         marginTop: '0.5rem'
@@ -134,9 +134,9 @@ const AnalysisDashboard = ({ analysis, onDistill, isDistilling, distillResult })
                 )}
 
                 {distillResult && (
-                    <div style={{ marginTop: '1.5rem', borderTop: '1px solid var(--border-primary)', paddingTop: '1rem' }}>
+                    <div style={{ marginTop: '1.5rem', borderTop: '1px solid #333', paddingTop: '1rem' }}>
                         <h3 style={{ color: 'var(--color-accent-cyan)' }}>Dissolution Complete</h3>
-                        <pre style={{ overflowX: 'auto', background: 'var(--bg-primary)', padding: '1rem', borderRadius: '4px', border: '1px solid var(--border-primary)', fontSize: '0.7rem', color: 'var(--text-primary)' }}>
+                        <pre style={{ overflowX: 'auto', background: '#000', padding: '1rem', borderRadius: '4px', border: '1px solid #333', fontSize: '0.7rem' }}>
                             {JSON.stringify(distillResult, null, 2)}
                         </pre>
                     </div>
@@ -146,14 +146,14 @@ const AnalysisDashboard = ({ analysis, onDistill, isDistilling, distillResult })
             {/* Column 2 (New): Dissolved Knowledge Ledger */}
             <div style={{
                 padding: '1.5rem',
-                backgroundColor: 'var(--bg-secondary)',
+                backgroundColor: 'var(--color-bg-panel)',
                 borderRadius: '8px',
-                border: '1px solid var(--border-primary)',
+                border: '1px solid var(--color-border)',
                 display: 'flex',
                 flexDirection: 'column'
             }}>
                 <h2 style={{ margin: '0 0 1rem 0', color: 'var(--color-accent-cyan)' }}>Dissolved Knowledge Ledger</h2>
-                <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>
+                <div style={{ fontSize: '0.85rem', color: '#888', marginBottom: '1rem' }}>
                     Query the "ghost" meanings of deleted files from the immutable vector ledger.
                 </div>
 
@@ -167,9 +167,9 @@ const AnalysisDashboard = ({ analysis, onDistill, isDistilling, distillResult })
                             flex: 1,
                             padding: '0.5rem',
                             borderRadius: '4px',
-                            border: '1px solid var(--border-secondary)',
-                            background: 'var(--bg-tertiary)',
-                            color: 'var(--text-primary)'
+                            border: '1px solid #444',
+                            background: '#222',
+                            color: '#fff'
                         }}
                     />
                     <button
@@ -177,10 +177,10 @@ const AnalysisDashboard = ({ analysis, onDistill, isDistilling, distillResult })
                         disabled={isSearching}
                         style={{
                             padding: '0.5rem 1rem',
-                            background: 'var(--border-primary)',
+                            background: '#333',
                             border: 'none',
                             borderRadius: '4px',
-                            color: 'var(--text-primary)',
+                            color: '#fff',
                             cursor: 'pointer'
                         }}
                     >
@@ -194,19 +194,19 @@ const AnalysisDashboard = ({ analysis, onDistill, isDistilling, distillResult })
                             {searchResults.map(result => (
                                 <div key={result.id} style={{
                                     padding: '0.75rem',
-                                    background: 'var(--color-accent-cyan-dim)',
+                                    background: 'rgba(0, 255, 255, 0.05)',
                                     borderLeft: '2px solid var(--color-accent-cyan)',
                                     borderRadius: '0 4px 4px 0'
                                 }}>
-                                    <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', marginBottom: '0.25rem' }}>
+                                    <div style={{ fontSize: '0.75rem', color: '#666', marginBottom: '0.25rem' }}>
                                         {new Date(result.timestamp).toLocaleString()} // Similarity: {(result.similarity * 100).toFixed(1)}%
                                     </div>
-                                    <div style={{ fontSize: '0.9rem', color: 'var(--text-primary)' }}>{result.content}</div>
+                                    <div style={{ fontSize: '0.9rem' }}>{result.content}</div>
                                 </div>
                             ))}
                         </div>
                     ) : (
-                        <div style={{ textAlign: 'center', color: 'var(--text-secondary)', marginTop: '2rem', fontStyle: 'italic' }}>
+                        <div style={{ textAlign: 'center', color: '#444', marginTop: '2rem', fontStyle: 'italic' }}>
                             Ledger ready. Enter a query to retrieve dissolved artifacts.
                         </div>
                     )}
