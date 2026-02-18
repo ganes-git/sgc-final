@@ -1,138 +1,148 @@
-# 🗑️ Semantic Garbage Collection
+# Semantic Garbage Collection (SGC) - Antigravity Protocol
 
-> **A sophisticated system for semantic data management and the "Semantic Dissolution Engine".**
+## 🎯 Overview
 
-![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)
-![Node Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen)
-![React](https://img.shields.io/badge/react-%5E18.2.0-61DAFB?logo=react&logoColor=black)
-![Vite](https://img.shields.io/badge/vite-%5E5.2.0-646CFF?logo=vite&logoColor=white)
+A prototype implementation of the **Autonomous Data Decay Framework** utilizing Shannon entropy calculation for intelligent data lifecycle management. This system autonomously identifies low-entropy data and transforms it into compact semantic vector embeddings.
 
----
-
-## 📖 Overview
-
-**Semantic Garbage Collection** is a prototype  designed to handle semantic data lifecycles. It features a modern **React** frontend for user interaction and a robust **Express** backend that powers the innovative **Dissolution Engine**.
-
-This project explores concepts of digital waste management and semantic data processing.
+**Research Paper:** "Autonomous Data Decay: A Framework for Semantic Garbage Collection Utilizing the Antigravity Protocol"  
+**Status:** Accepted at Ozmenta Symposium 2026
 
 ---
 
-## ✨ Features
+## 🚀 Live Demo
 
-- **⚛️ Modern Frontend**: Built with React 18 and Vite for lightning-fast performance.
-- **🎨 Beautiful UI**: Glassmorphism design with smooth animations.
-- **🔌 Powerful Backend**: Node.js & Express server handling complex logic.
-- **🧹 Dissolution Engine**: specialized logic for semantic data processing.
-- **☁️ Cloud-Ready**: Configured for deployment (Cloudflare/Serverless).
+**Deployed Application:** [Your Cloudflare URL]
 
 ---
 
-## 🛠️ Tech Stack
+## 📋 What It Does
 
-### Client
+This prototype demonstrates the core Semantic Garbage Collection algorithm:
 
-- **Framework**: React
-- **Build Tool**: Vite
-- **Styling**: CSS Modules / Custom CSS
-- **Linting**: ESLint
-
-### Server
-
-- **Runtime**: Node.js
-- **Framework**: Express
-- **Utilities**: `dotenv`, `cors`, `body-parser`
-- **Rate Limiting**: `express-rate-limit`
+1. **File Upload** - Accepts dataset files (log files, text files, repetitive data)
+2. **Shannon Entropy Analysis** - Calculates information entropy using the formula: H(X) = -Σ p(xi) log₂ p(xi)
+3. **Threshold Detection** - Evaluates files against 4.5 bits/byte threshold
+4. **Distillation Decision** - Routes low-entropy files (< 4.5) to distillation phase
+5. **Size Reduction** - Transforms data into semantic vectors with dramatic size reduction
+6. **Results Display** - Shows original size, dissolved size, and dissolution ratio
 
 ---
 
-## 🚀 Getting Started
+## 🛠️ Technology Stack
 
-Follow these steps to set up the project locally.
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) (v18 or higher recommended)
-- [npm](https://www.npmjs.com/)
-
-### Installation
-
-1. **Clone the repository**
-
-    ```bash
-    git clone https://github.com/ganes-git/sgc-final.git
-    cd sgc-final
-    ```
-
-2. **Install Dependencies**
-
-    ```bash
-    # Install root dependencies (if any)
-    npm install
-
-    # Install Client dependencies
-    cd client
-    npm install
-    cd ..
-
-    # Install Server dependencies
-    cd server
-    npm install
-    cd ..
-    ```
+- **Frontend:** HTML, CSS, JavaScript
+- **Styling:** Glassmorphism design
+- **Deployment:** Cloudflare Pages
+- **Algorithm:** Shannon Entropy calculation (client-side)
+- **Architecture:** Serverless, no API keys required
 
 ---
 
-## 🏃‍♂️ Usage
+## ⚙️ How to Run Locally
 
-### Development Mode
-
-1. **Start the Server**
-
-    ```bash
-    cd server
-    npm start
-    ```
-
-    *Server runs on `http://localhost:3000` (or configured port).*
-
-2. **Start the Client**
-
-    ```bash
-    cd client
-    npm run dev
-    ```
-
-    *Client runs on `http://localhost:5173`.*
-
-### Building for Production
-
-To build the client for production:
-
+1. Clone the repository:
 ```bash
-cd client
-npm run build
+git clone https://github.com/[your-username]/[repo-name].git
+cd [repo-name]
 ```
+
+2. Open `index.html` in your browser or use a local server:
+```bash
+python -m http.server 8000
+# OR
+npx serve
+```
+
+3. Navigate to `http://localhost:8000`
+
+---
+
+## 📊 How It Works
+
+### Shannon Entropy Calculation
+The system calculates byte-level entropy to determine data redundancy:
+- **High Entropy (≥ 4.5):** Good compression, file retained
+- **Low Entropy (< 4.5):** High redundancy, candidate for distillation
+
+### Distillation Process
+Low-entropy files undergo semantic distillation:
+1. File content analyzed for patterns
+2. Semantic vectors generated
+3. Original file "dissolved" 
+4. Compact vector representation stored
+
+---
+
+## ⚠️ Current Limitations
+
+This is a **research prototype** with the following limitations:
+
+1. **Minimum File Size:** Files below 1KB cannot be processed (insufficient byte patterns for meaningful entropy calculation)
+2. **No Persistent Storage:** Files are processed and results displayed, but not saved to backend
+3. **Search Functionality:** Currently non-operational (planned for future implementation)
+4. **Vector Readability:** Dissolved vectors are machine-readable only (LLM compatible, not human-readable)
+5. **Client-Side Processing:** All computation happens in browser (no server-side processing)
+
+---
+
+## 🔮 Future Roadmap
+
+### Planned Enhancements:
+- ✅ Backend persistence using Cloudflare KV
+- ✅ Semantic search implementation
+- ✅ Human-readable vector summaries
+- ✅ Antigravity Protocol integration (decentralized vector storage)
+- ✅ Support for larger file processing
+- ✅ Multi-file batch processing
+- ✅ Performance comparison with traditional storage
+
+---
+
+## 📖 Research Context
+
+This prototype validates the core concepts presented in our IEEE paper:
+- Autonomous data decay mechanisms
+- Shannon entropy as data viability metric
+- Lossy knowledge paradigm
+- 99%+ storage reduction potential
+
+**Full Paper:** Available upon request or after symposium presentation
+
+---
+
+## 🎓 Academic Information
+
+**Team:** Team Dynamos  
+**Institution:** R.M.D Engineering College, Chennai  
+**Department:** Electronics and Communication Engineering  
+**Event:** Ozmenta Symposium 2026 - Paper Presentation  
+
+**Team Members:**
+- Ganesh S 
+- Hemavarshini M 
+
+**Mentor:** Dr. Kamalrajan
+
+---
+
+## 📝 License
+
+This is an academic research project. Code provided as-is for educational purposes.
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+This is currently a research prototype. For questions or collaboration inquiries, please contact via the email addresses in the paper.
 
 ---
 
-## 📄 License
+## 📧 Contact
 
-This project is licensed under the **ISC License**.
+For technical queries related to this implementation:
+- Email: 25ec034@rmd.ac.in | 25ec050@rmd.ac.in
+- Mentor: kamal.snh@rmd.ac.in
 
 ---
 
-<p align="center">
-  Made  by <a href="https://github.com/ganes-git">ganes-git</a>
-</p>
+**Note:** This prototype demonstrates theoretical concepts from our research paper. Full production implementation with complete Antigravity Protocol integration is planned for future development phases.
