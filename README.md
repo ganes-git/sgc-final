@@ -11,7 +11,7 @@
 
 ## 📖 Overview
 
-**Semantic Garbage Collection** is a full-stack application designed to handle semantic data lifecycles. It features a modern **React** frontend for user interaction and a robust **Express** backend that powers the innovative **Dissolution Engine**.
+**Semantic Garbage Collection** is a prototype  designed to handle semantic data lifecycles. It features a modern **React** frontend for user interaction and a robust **Express** backend that powers the innovative **Dissolution Engine**.
 
 This project explores concepts of digital waste management and semantic data processing.
 
