@@ -11,7 +11,7 @@ A prototype implementation of the **Autonomous Data Decay Framework** utilizing 
 
 ## 🚀 Live Demo
 
-**Deployed Application:[](https://semantic-gc-live.pages.dev/)
+**Deployed Application:(https://semantic-gc-live.pages.dev/)
 
 ---
 
