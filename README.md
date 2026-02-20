@@ -5,13 +5,13 @@
 A prototype implementation of the **Autonomous Data Decay Framework** utilizing Shannon entropy calculation for intelligent data lifecycle management. This system autonomously identifies low-entropy data and transforms it into compact semantic vector embeddings.
 
 **Research Paper:** "Autonomous Data Decay: A Framework for Semantic Garbage Collection Utilizing the Antigravity Protocol"  
-**Status:** Accepted at Ozmenta Symposium 2026
+
 
 ---
 
 ## 🚀 Live Demo
 
-**Deployed Application:** [Your Cloudflare URL]
+**Deployed Application:[](https://semantic-gc-live.pages.dev/)
 
 ---
 
